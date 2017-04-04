@@ -50,7 +50,16 @@ A kitchen has many items.
     rack, and cinnamon, nutmeg, and vanilla on another shelf.
 
 ```json
-<!-- your answer here -->
+<!-- {
+  "kitchen": {
+    "cupboard": {"bowls" "plates"},
+    "stoveHeat": {"small" "medium" "large" "extra large"},
+    "spiceRack":
+      {"herbs": ["chives", "lemon grass", "mint"],
+      "spices": ["cinnamon", "nutmeg", "vanilla"]}
+  }
+
+  } -->
 ```
 
 ## Modeling Data Using JSON: Part II
@@ -62,7 +71,22 @@ delicious apple.
 Copy the JSON that you wrote for the previous question and include the new information about the kitchen.
 
 ```json
-<!-- your answer here -->
+<!-- {
+  "kitchen": {
+    "cupboard": {"bowls" "plates"},
+    "stoveHeat": {"small" "medium" "large" "extra large"},
+    "spiceRack":
+      {"herbs": ["chives", "lemon grass", "mint"],
+      "spices": ["cinnamon", "nutmeg", "vanilla"]},
+      "fuitBasket": {
+        "apples": {
+          "fuji": 2,
+          "gala": 7,
+          "goldenDel": 1}
+        }
+      }
+  }
+ -->
 ```
 
 ## JSON Methods
@@ -70,7 +94,24 @@ Copy the JSON that you wrote for the previous question and include the new infor
 Can you write a method in the JSON that you wrote above?
 
 ```json
-<!-- your answer here -->
+<!-- {
+  "kitchen": {
+    "cupboard": {"bowls" "plates"},
+    "stoveHeat": {"small" "medium" "large" "extra large"},
+    "spiceRack":
+      {"herbs": ["chives", "lemon grass", "mint"],
+      "spices": ["cinnamon", "nutmeg", "vanilla"]},
+    "fuitBasket": {
+      const "apples"= {"fuji": 2, "gala": 7, "goldenDel": 1} {
+      allApples.Sum = function() {
+      return this.fuji + this.gala + this.goldenDel};
+      const result = allApples.Sum()
+}
+        }
+      }
+  }
+
+  } -->
 ```
 
 ## JSON Comments
@@ -78,5 +119,23 @@ Can you write a method in the JSON that you wrote above?
 Can you write comments in the JSON that you wrote above?
 
 ```json
-<!-- your answer here -->
+<!-- {
+  "kitchen": {
+    "cupboard": {"bowls" "plates"},
+    "stoveHeat": {"small" "medium" "large" "extra large"},
+    "spiceRack":
+      {"herbs": ["chives", "lemon grass", "mint"],
+      "spices": ["cinnamon", "nutmeg", "vanilla"]},
+    "fuitBasket": {
+      let apples = {fuji: 2, gala: 7, goldenDel: 1} {
+      allApples.Sum = function() {
+      return this.fuji + this.gala + this.goldenDel};
+      const result = allApples.Sum(),
+}
+ {#This comment is for the code above. I am not sure why it does not work}
+        }
+      }
+  }
+
+  } -->
 ```
